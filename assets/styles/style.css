@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    height: 100vh;
+    background: #d9e5f3;
+    overflow-y: hidden;
+
+}
+
+/* 
+  HEADER  
+*/
+.headerCont {
+    width: 100vw;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0px 6px 20px -6px #8AB1F8;
+    border-radius:0 0 13px 13px;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 3rem; 
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* 
+  MUTUAL CONTAINER
+*/
+.container {
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    width: 100vw;
+    height: calc(100vh - 100px - 3rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {   
+    font-size: 32px;
+    text-align: center;
+    color: #134077;
+    margin-bottom: 22px;
+}
+
+/*
+FORM STYLING
+*/
+form {
+    display: flex;    
+    width: 662px;
+    background: #FFFFFF;
+    margin-bottom: 3.5rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+    border: 1px solid #134077;
+    border-radius: 19px;
+}
+
+.loginCont {
+    height: 400px;
+}
+
+.regCont {
+    height: 500px;
+}
+
+/* input + lables */
+.label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #231F20;
+    width: 100%;
+}
+.input {
+  height: 30px;
+  width: 85%;
+  font-weight: 400;
+  color: #2a2525;
+  border: none;
+  align-self: flex-start;
+}
+.input:focus{
+  outline: none;
+}
+hr{
+  width: 100%;
+  border: 1px solid #2D224C;
+  margin-bottom: 16px;
+}
+
+
+/* show password */
+.occhio{
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .occhio > .fa-eye{
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+    display: inline-block;
+    color: #0057FF;
+    
+  }
+  
+  .button {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 1.5rem !important;
+    background: #0057FF;
+    border: none;
+    border-radius: 11px;
+    width: 577px;
+    cursor: pointer;
+    height: 59px;
+    margin: 0 auto 10px;
+
+}
+
+/* eventi */
+
+h2 {
+    margin-bottom: 80px;
+    font-size: 32px;
+    text-align: center;
+    color: #134077;
+}
+
+.containerEventi {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#eventi {
+    z-index: 500;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.evento {
+    background: #FFFFFF;
+    border: 1px solid #134077;
+    border-radius: 19px;
+    width: 350px;
+    margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.evento h3{
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #231F20;
+}
+
+.evento div{
+    font-size: 20px;
+    color: #CCCCCC;
+}
+
+.evento .button {
+    width: 100%;
+    margin-top: 35px;
+}
+
+.error{
+  background-color: rgba(198, 4, 4, 0.396);
+  padding: 7px 15px;
+  width: 70%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 15px;
+}
+
+a{
+  color: #0057FF;
+}
+
+.logOut{
+  text-decoration: none;
+}
+.logOut:hover{
+  text-decoration: underline;
+}
